@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio web developer dan designer.">
+    <title>Portofolio | Rahmat Hidayat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">RH<span>.</span></a>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <div class="header-actions">
+            <button class="icon-btn" id="themeToggle" aria-label="Ganti tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="icon-btn" id="menuToggle"
+                    aria-label="Buka navigasi" aria-expanded="false">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR OPPORTUNITIES
+                </span>
+
+                <p class="greeting">Halo, saya</p>
+                <h1>Rahmat<span class="gradient-text">Hidayat.</span></h1>
+
+                <h2>Web Developer <span>&</span> Designer</h2>
+
+                <p class="hero-description">
+                    Saya membangun website yang modern, responsif, dan intuitif
+                    dengan perpaduan desain menarik serta teknologi yang tepat.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Hubungi Saya <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        Lihat Proyek
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>01<span>+</span></strong>
+                        <small>Passion for Coding</small>
+                    </div>
+                    <div>
+                        <strong>100<span>%</span></strong>
+                        <small>Dedikasi</small>
+                    </div>
+                    <div>
+                        <strong>100<span>%</span></strong>
+                        <small>Keinginan Belajar</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="profile-card">
+                    <div class="card-top">
+                        <span class="window-dots">
+                            <i></i><i></i><i></i>
+                        </span>
+                        <span>profile.png</span>
+                    </div>
+
+                    <img src="foto.png" alt="Foto Rahmat Hidayatullah"
+                         class="profile-image"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="profile-placeholder" aria-hidden="true">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+
+                    <div class="profile-caption">
+                        <span class="caption-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <div>
+                            <strong>Creative Developer</strong>
+                            <small>Building digital experiences</small>
+                        </div>
+                        <i class="fa-solid fa-circle-check verified"></i>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-code">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Clean Code</span>
+                </div>
+                <div class="floating-card floating-design">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Creative Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section content-section" id="about">
+            <div class="section-heading">
+                <span class="section-label">01 / ABOUT ME</span>
+                <h2>Mengenal saya <span class="gradient-text">lebih dekat.</span></h2>
+            </div>
+            <div class="about-card">
+                <div class="about-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                    <h3>Teknologi bertemu kreativitas</h3>
+                    <p>
+                        Saya tertarik pada pengembangan website dan desain antarmuka.
+                        Fokus saya adalah membuat pengalaman digital yang mudah
+                        digunakan, memiliki tampilan konsisten, dan bekerja dengan baik
+                        di berbagai ukuran layar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section content-section" id="services">
+            <div class="section-heading">
+                <span class="section-label">02 / SERVICES</span>
+                <h2>Apa yang bisa saya <span class="gradient-text">kerjakan?</span></h2>
+            </div>
+
+            <div class="card-grid">
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Membangun website yang cepat, responsif, dan mudah dipelihara.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <h3>UI Design</h3>
+                    <p>Mendesain antarmuka yang modern dengan hierarki visual yang jelas.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Mengoptimalkan tampilan untuk desktop, tablet, dan perangkat mobile.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section content-section" id="skills">
+            <div class="section-heading">
+                <span class="section-label">03 / SKILLS</span>
+                <h2>Teknologi yang saya <span class="gradient-text">gunakan.</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                <div class="skill-item"><i class="fa-brands fa-php"></i><span>php</span></div>
+                <div class="skill-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+                <div class="skill-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                <div class="skill-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                <div class="skill-item"><i class="fa-solid fa-palette"></i><span>UI Design</span></div>
+            </div>
+        </section>
+
+        <section class="section content-section" id="projects">
+            <div class="section-heading">
+                <span class="section-label">04 / PROJECTS</span>
+                <h2>Beberapa karya <span class="gradient-text">pilihan.</span></h2>
+            </div>
+
+            <div class="card-grid">
+                <article class="project-card">
+                    <div class="project-cover"> <img src="Jaringan.png" alt="Preview website portfolio" loading="lazy"> </div>
+                    <div class="project-info">
+                        <h3>monitoring_dan_billing_apiMikrotik</h3>
+                        <p>Sistem monitoring dan billing untuk jaringan Mikrotik.</p>
+                        <div class="project-tags"><span>CI4</span><span>CSS</span><span>JavaScript</span></div>
+                        <a href="https://github.com/CraftsmanDev/monitoring_dan_billing_apiMikrotik" target="_blank" rel="noopener noreferrer" class="project-link">
+                            Lihat proyek <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-cover"> <img src="image.png" alt="Preview website portfolio" loading="lazy"> </div>
+                    <div class="project-info">
+                        <h3>RE:GEN</h3>
+                        <p>menghubungkan langkah kecil sehari-hari dengan dampak lingkungan yang nyata — mengubah sampah menjadi poin, kebiasaan baik, dan masa depan yang lebih bersih.</p>
+                        <div class="project-tags"><span>UI/UX</span><span>html</span><span>CSS</span><span>JavaScript</span></div>
+                        <a href="https://github.com/rahmat-cell/RE-GEN-Daur-ulang-sampah" target="_blank" rel="noopener noreferrer" class="project-link">
+                            Lihat proyek <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-cover cover-three">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>PROJECT 03</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Website</h3>
+                        <p>Website personal dengan fokus pada aksesibilitas.</p>
+                        <div class="project-tags"><span>Responsive</span><span>JavaScript</span></div>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            Lihat proyek <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <span class="section-label">05 / CONTACT</span>
+            <h2>Punya ide menarik?</h2>
+            <p>Mari berdiskusi dan wujudkan proyek digital yang hebat bersama.</p>
+            <a href="Rahmatart343@gmail.com" class="btn btn-primary">
+                <i class="fa-solid fa-envelope"></i> Kirim Email
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">RH<span>.</span></a>
+        <p>© <span id="year"></span> Rizky Hidayat. Dibuat dengan penuh kreativitas.</p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <nav class="sidebar" id="sidebar" aria-label="Navigasi utama">
+        <a href="#home" class="nav-link active" aria-label="Home" title="Home">
+            <i class="fa-solid fa-house"></i><span>Home</span>
+        </a>
+        <a href="#about" class="nav-link" aria-label="About" title="About">
+            <i class="fa-solid fa-user"></i><span>About</span>
+        </a>
+        <a href="#services" class="nav-link" aria-label="Services" title="Services">
+            <i class="fa-solid fa-briefcase"></i><span>Services</span>
+        </a>
+        <a href="#skills" class="nav-link" aria-label="Skills" title="Skills">
+            <i class="fa-solid fa-code"></i><span>Skills</span>
+        </a>
+        <a href="#projects" class="nav-link" aria-label="Projects" title="Projects">
+            <i class="fa-solid fa-folder-open"></i><span>Projects</span>
+        </a>
+        <a href="#contact" class="nav-link" aria-label="Contact" title="Contact">
+            <i class="fa-solid fa-envelope"></i><span>Contact</span>
+        </a>
+    </nav>
+</body>
+</html>
